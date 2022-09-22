@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="fundo">
+        <h1>@tulioavellar</h1>
+        <div class="calculadora">
+            <h1>Calculadora</h1>
+            <p id="resultado"></p>
+            <table>
+                <tr>
+                    <td><input class="botao" type="button" value="C" onclick="apagarTudo()"></td>
+                    <td><input class="botao" type="button" value="&lt" onclick="apagar()"></td>
+                    <td><input class="botao" type="button" value="/" onclick="clicar('/')"></td>
+                    <td><input class="botao" type="button" value="X" onclick="clicar('*')"></td>
+                </tr>
+                <tr>
+                    <td><input class="botao" type="button" value="7" onclick="clicar('7')"></td>
+                    <td><input class="botao" type="button" value="8" onclick="clicar('8')"></td>
+                    <td><input class="botao" type="button" value="9" onclick="clicar('9')"></td>
+                    <td><input class="botao" type="button" value="-" onclick="clicar('-')"></td>
+                </tr>
+                <tr>
+                    <td><input class="botao" type="button" value="4" onclick="clicar('4')"></td>
+                    <td><input class="botao" type="button" value="5" onclick="clicar('5')"></td>
+                    <td><input class="botao" type="button" value="6" onclick="clicar('6')"></td>
+                    <td><input class="botao" type="button" value="+" onclick="clicar('+')"></td>
+                </tr>
+                <tr>
+                    <td><input class="botao" type="button" value="1" onclick="clicar('1')"></td>
+                    <td><input class="botao" type="button" value="2" onclick="clicar('2')"></td>
+                    <td><input class="botao" type="button" value="3" onclick="clicar('3')"></td>
+                    <td rowspan="2"><input class="botao" type="button" style="height: 106px;" value="=" onclick="calcular()"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input class="botao" type="button" style="width: 106px;" value="0" onclick="clicar('0')"></td>
+                    <td><input class="botao" type="button" value="." onclick="clicar('.')"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
